@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+@media screen and (max-width: 550px) {
+/* navbar */
+li,
+  a,
+  .blogs {
+    color: #edf0f1;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+  }
+  a {
+    background-color: transparent;
+  }
+  li {
+    border: 1px solid rgb(32, 240, 240);
+    margin-top: 0.4rem;
+  }
+  .blogs {
+    margin-top: 0.4rem;
+  }
+  header {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: absolute; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 80%; /* Full width */
+    box-shadow: 0px 0px 20px 0px rgba(14, 247, 255, 0.75);
+  }
+  .active {
+    background-color: #17bbe4;
+    padding: 9px 25px;
+  }
+  .nav-links {
+    list-style: none;
+  }
+  .nav-links li {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 20px;
+  }
+  .nav-links li a {
+    transition: all 0.3s ease 0s;
+  }
+  .nav-links li a:hover {
+    color: #0088a9;
+  }
+
+  button {
+    background-color: rgba(0, 136, 169, 1);
+    padding: 9px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+/* banner */
+.banner {
+  margin-top: 17rem; /*to avoid mixing with navbar */
+  padding: 1rem 1rem;
+  display: grid;
+  background: url(https://source.unsplash.com/1600x900/?physics,black,philosophy);
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.heading1 {
+  background: none;
+  color: #17bbe4;
+  font-size: 30px;
+  /* font-family: "Times New Roman", Times, serif; */
+  font-weight: 700;
+}
+.para1 {
+  background: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+.subscribe {
+  display: inline;
+  background-color: rgba(34, 207, 250, 0.3);
+  color: white;
+  font-size: 20px;
+  padding: 0.3rem 1rem;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid;
+  margin: 1rem 2rem;
+  border-radius: 5px;
+  border-color: #17bbe4;
+}
+/* Feature */
+.container-feature {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    padding: 2rem 1rem 2rem 1rem;
+    background-color: transparent;
+    color: white;
+  }
+  .heading-feature{
+    background-color: transparent;
+    font-size: 30px;
+    color: aqua;
+    font-weight: 800;
+    padding-top: 2rem;
+    text-align: center;
+    /* padding-right: 5rem; */
+  }
+  .para-feature {
+    background-color: transparent;
+    font-size: 16px;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+  div {
+    background-color: transparent;
+  }
+  .feature-button {
+    color: white;
+    margin-top: 2rem;
+    font-size: larger;
+    background-color: #e49217;
+  }
+  .graphic-image {
+    background-color: transparent;
+    width: 250px;
+  }
+
+/* book mention */
+.book-mention {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.heading-book {
+    margin-top: 1rem;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+ text-align: center;
+  font-size: 35px;
+  color: #17e4da;
+}
+.book-button {
+  color: white;
+  margin-top: 2rem;
+  font-size: larger;
+  background-color: #e49217;
+}
+/* clock */
+.buttons {
+  background-color: transparent;
+}
+/* Blogs */
+.card-container {
+  background-color: black;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading2 {
+  color: rgb(0, 217, 255);
+  font-family: "Roboto", sans-serif;
+
+  background-color: black;
+  font-size: 30px;
+  text-align: center;
+
+  text-decoration: underline;
+  text-transform: uppercase;
+  word-spacing: 8px;
+  letter-spacing: 3px;
+
+  padding-top: 2rem;
+}
+.cards {
+  /* align-content: center; */
+  display: flex;
+  height: 40vh;
+  overflow: hidden;
+  overflow-y: hidden;
+  width: 35vh;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid rgb(0, 183, 255);
+  margin-bottom: 2rem;
+  /* border-radius: 20px; */
+  transition: all 0.3s ease 0s;
+}
+.cards:hover {
+  box-shadow: 1px 2px 30px -2px rgba(18, 227, 255, 0.86);
+}
+.cards-para {
+  text-align: justify;
+  /* padding-top: 1rem; */
+  /* padding: 10rem 0rem; */
+  padding: 1rem 0.5rem;
+}
+
+.read-more-button {
+  padding: 0.4rem 1rem;
+  color: white;
+  margin-bottom: 4rem;
+}
+/* footer  */
+footer {
+  box-shadow: 0px 0px 20px 0px rgba(14, 247, 255, 0.75);
+  font-size: large;
+  padding: 1.3rem;
+  text-align: center;
+  color: aqua;
+  font-family: "Montserrat", sans-serif;
+}
+}
